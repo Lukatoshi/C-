@@ -1,0 +1,66 @@
+#include <iostream>
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+using namespace std;
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	float num1, num2, resultado, cont;
+	char operador;
+	char sair = 'n';
+	cont = 0;
+	cout << "Bem-vindo a Calculadora básica em C++: \n";
+	
+	while(sair == 'n'){
+	
+	do{
+	cout << "Digite um numero: \n";
+	cin >> num1;
+		if (num1 != int; cont ++)
+			cont = ++;
+			cout << "Usuario, e um digito"
+	}while (num1 != int)
+	
+	cout << "Digite um numero: \n";
+	cin >> num2;
+	cout << "Digite uma operação: + , - , * , / \n";
+	cin >> operador;
+		
+	
+	
+	if (operador=='+') {
+		resultado = num1 + num2;
+		cout << resultado;
+		}
+		else
+			 if (operador == '-'){
+				resultado = num1 - num2;
+				cout << resultado;
+				}
+				else
+				 	if(operador == '*'){
+					resultado = num1 * num2;
+					cout << resultado;
+						}
+						else 
+							if (operador = '/'){
+							resultado = num1 / num2;
+							cout << resultado;
+							
+						}else
+						{
+							
+							cout << "Desculpe, não foi possivel realizar sua operação \n";
+						}
+						
+						cout << "Dejesa Sair: S/N \n"; 
+						cin >> sair;
+	
+	} 			
+			
+		
+	return 0;
+	}
