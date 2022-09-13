@@ -1,0 +1,69 @@
+#include <iostream>
+using namespace std;
+
+float multiplicar(float a,float b){
+	
+	float r = a * b;
+	return r;
+	
+	}
+float soma(float a,float b){
+	
+	float r = a + b;
+	return r;
+	
+	}
+float subtracao(float a,float b){
+	
+	float r = a - b;
+	return r;
+	
+	}
+float divisao(float a,float b){
+	
+	float r = a / b;
+	return r;
+	
+	}
+	
+float fatorial(a, b){
+}
+
+int main() {
+	float num1, num2;
+	int operador;
+	
+	cout<< "Calculadora com Switch Case! \n";
+	cout<< "Digite um numero: \n";
+	cin>> num1;
+	cout<< "Digite um numero: \n";
+	cin>> num2;
+	cout<< "Escolha qual operacao voce deseja realizar: 1(+)2(-)3(*)4(/)5(fatorial); \n";
+	cin>> operador;
+	
+	
+	switch (operador){
+		case 1: 
+		cout<< soma(num1,num2)<< "\n";
+		break;
+		
+		case 2: 
+		cout<< subtracao(num1,num2)<< "\n";
+		break;
+		
+		case 3: 
+		cout<< multiplicar(num1,num2)<< "\n";
+		break;
+		
+		case 4: 
+		cout<< divisao(num1,num2)<< "\n";
+		break;
+		
+		case 5: 
+		cout<< fatorial(num1,num2)<< "\n";
+		break;
+		
+	}
+	
+	return 0;
+}
