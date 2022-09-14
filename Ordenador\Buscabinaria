@@ -1,0 +1,67 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+void ord(int vet[], int t){
+     
+     vet[t];
+     int auxiliar;
+
+     for(int i=0; i<8; i++){
+            
+            for(int j=i+1; j<8; j++){
+                
+                  if(vet[i]>vet[j]){
+                    
+                     auxiliar=vet[i];
+                     
+                     
+                     vet[i]=vet[j];
+                     
+                     
+                     vet[j]=auxiliar;
+                     }  
+            }
+     }
+          
+}
+
+int binario(int b, int vet[], int t){
+    
+    ord(vet, t);
+    
+    int inicio = 0, final = 7, meio;
+    
+    while(inicio <= final){
+    
+              meio = (inicio + final)/2;
+              
+              if(vet[meio] == b) 
+                   return meio;
+              
+              if(vet[meio] < b)
+                   inicio = meio + 1;
+              
+              if(vet[meio] > b)
+                   final = meio - 1;
+    }
+    
+    return -1;
+
+}
+
+int main()
+{
+    int t =8;
+    
+    int vet[8] = {5, 2, 4, 1, 6, 0, 3, 7};
+    
+    cout << binario(100, vet, t) << "\n\n";
+    
+
+    
+    
+    system("PAUSE");
+    return EXIT_SUCCESS;
+}
